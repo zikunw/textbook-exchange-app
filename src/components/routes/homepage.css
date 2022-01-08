@@ -18,6 +18,12 @@
 .homepage-search-bar {
   border: 1px solid darkgray;
   font-size: 2em;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.homepage-search-bar:hover {
+  box-shadow: 5px 5px 10px rgb(214, 214, 214);
 }
 
 .homepage-search-submit-btn {

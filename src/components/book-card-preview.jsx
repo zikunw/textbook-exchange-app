@@ -1,21 +1,26 @@
-import BookCondition from "./book-condition"
+import BookCondition from "./book-condition";
+import './book-card-preview.css';
 
 export default function BookCardPreview(props) {
-  const className = props.subject + " " + props.classNumber
+  const className = props.subject + " " + props.classNumber;
 
   return (
-    <div
-      style={{
-        border:'1px black solid',
-        height: 'auto',
-        padding: '10px',
-        margin: '10px'
-      }}
-    >
-      <h2>{className}: {props.title}</h2>
-      <p>{props.date}</p>
-      <p>{props.description}</p>
-      <BookCondition condition={props.condition} />
+    <div className="card">
+      <div className="img-container">
+        <img src={require(`../images/${props.imageName}`)} alt={props.title}></img>
+      </div>
+      <div className="card-description">
+        <div style={{clear: 'both'}}>
+          <p className="text-classname">{className}</p>
+          <p className="text-date">{props.date}</p>
+        </div>
+        <div style={{clear: 'both'}}></div>
+        <p className="text-title">{props.title}</p>
+        <p className="text-description">{props.description}</p>
+      </div>
+      <div className="condition-container">
+        <BookCondition condition={props.condition} />
+      </div>
     </div>
   )
 }

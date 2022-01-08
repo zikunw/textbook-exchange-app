@@ -17,6 +17,7 @@ export default function BookCardContainer(){
           date={book.date}
           description={book.description}
           condition={book.condition}
+          imageName={book.imageName}
           />;
       })}
     </div>

@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Textbook Exchange</h1>
-        <nav>
+        <h1 className="web-title">Textbook Exchange 📖</h1>
+        <nav className="site-links">
           | {" "}
           <Link to='/homepage'>Homepage</Link> | {" "}
           <Link to='/share'>Share</Link> | {" "}
