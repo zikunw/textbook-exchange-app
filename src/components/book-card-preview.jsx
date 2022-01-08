@@ -7,7 +7,6 @@ export default function BookCardPreview(props) {
     <div
       style={{
         border:'1px black solid',
-        width:'30%',
         height: 'auto',
         padding: '10px',
         margin: '10px'

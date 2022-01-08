@@ -1,18 +1,14 @@
 import BookCardPreview from "./book-card-preview";
 import CreateTemplateData from "../data";
 
+import './book-card-container.css';
+
 export default function BookCardContainer(){
 
   const templateData = CreateTemplateData();
 
   return(
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'flex-start',
-      }}
-    >
+    <div className="container">
       {templateData.map((book) => {
         return <BookCardPreview 
           subject={book.subject} 

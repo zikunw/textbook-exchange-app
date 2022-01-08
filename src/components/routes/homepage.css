@@ -1,0 +1,25 @@
+.homepage-container {
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  padding: 3em 2em 6em 2em;
+}
+
+.homepage-introduction {
+  text-align: center;
+}
+
+.homepage-search {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+
+.homepage-search-bar {
+  border: 1px solid darkgray;
+  font-size: 2em;
+}
+
+.homepage-search-submit-btn {
+  margin: 1em 0;
+}

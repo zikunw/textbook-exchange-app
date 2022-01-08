@@ -22,7 +22,6 @@ ReactDOM.render(
           <Route path='share' element={<Share />}></Route>
         </Route>
 
-
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
