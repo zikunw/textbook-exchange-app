@@ -1,8 +1,20 @@
-.homepage-container {
+.homepage-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+}
+
+.homepage-img {
+  height: 700px;
+  overflow: scroll;
+  box-shadow: inset 5px 0px 10px rgb(231, 231, 231);
+}
+
+.homepage-info {
   height: 100%;
-  display: grid;
   justify-content: center;
-  padding: 3em 2em 6em 2em;
+  padding: 2em;
+
 }
 
 .homepage-introduction {
