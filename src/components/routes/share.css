@@ -1,0 +1,39 @@
+.share-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.share-side-bar {
+  grid-column: 1/2;
+  border-right: 1px solid rgb(228, 228, 228);
+}
+
+.share-content {
+  grid-column: 2/5;
+}
+
+.search-bar-container {
+  height: 60px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgb(228, 228, 228);
+  border: 1px solid rgb(228, 228, 228);
+}
+
+.share-search-bar {
+  width: 99%;
+  font-size: 45px;
+  border: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(189, 189, 189);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(189, 189, 189);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(189, 189, 189);
+}

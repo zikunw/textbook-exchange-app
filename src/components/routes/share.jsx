@@ -5,17 +5,26 @@
  * 
  * This page needs:
  * - A search box
- * - A filter bar
+ * - A filter side bar
  * - display of books (with hyperlinks to each books' detail information)
  * 
  */
 import BookCardContainer from "../book-card-container";
+import ShareFilterBar from "../share-filter-bar";
+import './share.css';
 
 export default function Share(){
   return(
-    <div>
-      <h1>This is the book sharing page where you suppose to see all the books avaliable (TODO)</h1>
-      <BookCardContainer />
+    <div className="share-container">
+      <nav className="share-side-bar">
+        <ShareFilterBar />
+      </nav>
+      <div className="share-content">
+        <form className="search-bar-container">
+          <input type='text' className="share-search-bar" placeholder="Search your textbook here"></input>
+        </form>
+        <BookCardContainer />
+      </div>
     </div>
   )
 }

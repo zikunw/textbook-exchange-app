@@ -21,6 +21,15 @@ export default function BookCondition({condition}){
     //TODO: I want really fancy display of the condition,
     //      like a colored bar with different color showing the
     //      conditions.
-    <p>Condition: {conditionDescription}({condition})</p>
+    <p 
+      style={{
+        margin: '0', 
+        padding: '2px', 
+        textAlign: 'center',
+        fontSize: '12px'
+      }}
+    >
+      Condition: {conditionDescription}({condition})
+    </p>
   )
 }

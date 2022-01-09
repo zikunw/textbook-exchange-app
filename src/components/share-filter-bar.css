@@ -1,0 +1,51 @@
+p {
+  margin: 0;
+}
+
+.sidebar-container {
+  height: fit-content;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  padding: 10px
+}
+
+.sidebar-title {
+  margin: 0;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.form-label {
+  margin: 5px 0;
+  grid-column: 1/4;
+}
+
+.checkbox-element {
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.checkbox-element:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.checkbox-element-other {
+  grid-column: 1/4;
+}
+
+.side-bar-search {
+  grid-column: 1/4;
+  border: 1px solid rgb(211, 211, 211);
+  font-size: 20px;
+}
+
+.downward-shadow {
+  box-shadow: 0 2px 4px rgb(236, 236, 236);
+}
