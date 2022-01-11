@@ -23,7 +23,7 @@ export default function Share(){
         <form className="search-bar-container">
           <input type='text' className="share-search-bar" placeholder="Search your textbook here"></input>
         </form>
-        <BookCardContainer />
+        <BookCardContainer direction='vertical'/>
       </div>
     </div>
   )

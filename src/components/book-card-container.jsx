@@ -3,12 +3,13 @@ import CreateTemplateData from "../data";
 
 import './book-card-container.css';
 
-export default function BookCardContainer(){
+export default function BookCardContainer({direction}){
 
   const templateData = CreateTemplateData();
+  const containerName = direction + '-container';
 
   return(
-    <div className="container">
+    <div className={containerName}>
       {templateData.map((book) => {
         return <BookCardPreview 
           subject={book.subject} 

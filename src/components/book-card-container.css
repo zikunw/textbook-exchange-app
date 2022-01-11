@@ -1,4 +1,9 @@
-.container {
+.vertical-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.horizontal-container {
+  display: flex;
+  overflow-x: auto;
 }

@@ -20,7 +20,17 @@ header {
 
 .site-links {
   grid-column: 3/4;
-  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.nav-btn {
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 1em;
+  background-color: white;
 }
 
 main {
@@ -29,4 +39,14 @@ main {
 
 footer {
   border-top: 1px solid darkgrey;
+  padding: 3em;
+  text-align: center;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
 }
